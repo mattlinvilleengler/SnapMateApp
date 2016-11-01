@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Dimensions, Text, View } from 'react-native';
-import Camera from 'react-native-camera';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import GIcon from 'react-native-vector-icons/MaterialIcons';
 import { MKButton, MKColor, getTheme } from 'react-native-material-kit';
 
 export default class BottomNav extends Component {
@@ -26,13 +24,7 @@ export default class BottomNav extends Component {
       </View>
     );
   }
-  takePicture() {
-    this.camera.capture()
-      .then((data) => console.log(data))
-      .catch(err => console.error(err));
-  }
 }
-//{this.takePicture.bind(this)}
 const ColoredRaisedButton = MKButton.coloredFab()
   .withText(<Icon name="camera" size={15} color="#333" />)
   .withBackgroundColor(MKColor.Cyan)
