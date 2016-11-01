@@ -13,9 +13,9 @@
 ### Test on other iphones and devices
 ### Implement redux to seperate all logic and state from controllers
 
-![snapMate App](./readmeImages/app1.PNG?raw=true "SnapMateApp")
-![snapMate App](./readmeImages/appsuccess1.PNG?raw=true "SnapMate Success")
-![snapMate App](./readmeImages/apperror1.PNG?raw=true "SnapMateApp Error")
+![snapMate App](./readmeImages/app1.png?raw=true "SnapMateApp")
+![snapMate App](./readmeImages/appsuccess1.png?raw=true "SnapMate Success")
+![snapMate App](./readmeImages/apperror1.png?raw=true "SnapMateApp Error")
 ![snapMate App](./readmeImages/appadmin1.png?raw=true "SnapMate Admin")
 
 
