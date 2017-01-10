@@ -50,9 +50,7 @@ Launch the store website through the dashboard to view banners, offers, etc..
 Documentation
 -------------
 
-####bigCommerce PayPal Integration App 
-
-####BC app creation process
+###BC app creation process
 	
 - Login to the bC developer portal
 - Create an application and fill out various details (name, snapshots, etc.) 
@@ -62,7 +60,7 @@ Documentation
 - Add a load url -this is the url the bC will request after the auth process for install and opening of the app- eg https://localhost:3000/load
 
 
-####BC install process
+###BC install process
 
 - Utilize the bc - node module on npm
 - Add your bC client and secret variables to the config
@@ -104,13 +102,13 @@ function load(req, res) {
 	You can also set up an uninstall route to take actions if the user uninstalls the app
 		
 
-####BC API Process
+###BC API Process
 	
 - Utilize the bc - node module on npm
 - Add your bC client and secret variables to the config along with the auth token stored earlier
 - Review bC api documentation to achieve application goals 
 
-####ISU Process
+###ISU Process
 
 - Create an app with paypal 
 - Document the clientID & client secret
@@ -198,7 +196,7 @@ function isuFinal(req, res) {
 };
 ```
 
-####Tech Stack
+###Tech Stack
 
 	Kraken, Node, Express, React
 
