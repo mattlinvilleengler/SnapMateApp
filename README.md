@@ -47,7 +47,8 @@ Launch the store website through the dashboard to view banners, offers, etc..
 
 
 
-##Documentation
+Documentation
+-------------
 
 ####bigCommerce PayPal Integration App 
 
