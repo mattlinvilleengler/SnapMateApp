@@ -53,21 +53,21 @@ Launch the store website through the dashboard to view banners, offers, etc..
 
 ####BC app creation process
 	
-	- Login to the bC developer portal
-	- Create an application and fill out various details (name, snapshots, etc.) 
-	- These can be updated later
-	- Fill out scopes that the app will need access too - products, categories, etc..
-	- Add an auth url -this is the url the bC will request when a user starts the install process - eg https://localhost:3000/auth
-	- Add a load url -this is the url the bC will request after the auth process for install and opening of the app- eg https://localhost:3000/load
-	
+- Login to the bC developer portal
+- Create an application and fill out various details (name, snapshots, etc.) 
+- These can be updated later
+- Fill out scopes that the app will need access too - products, categories, etc..
+- Add an auth url -this is the url the bC will request when a user starts the install process - eg https://localhost:3000/auth
+- Add a load url -this is the url the bC will request after the auth process for install and opening of the app- eg https://localhost:3000/load
+
 
 ####BC install process
 
-	- Utilize the bc - node module on npm
-	- Add your bC client and secret variables to the config
-	- Set up Auth and Load routes.
-	- The Auth URL will return an OAuth token specific to the merchant - you will need to store this to use the api later
-	- The load url will need to return the application view (html, react, etc…)
+- Utilize the bc - node module on npm
+- Add your bC client and secret variables to the config
+- Set up Auth and Load routes.
+- The Auth URL will return an OAuth token specific to the merchant - you will need to store this to use the api later
+- The load url will need to return the application view (html, react, etc…)
 
 	Auth -
 
@@ -106,15 +106,15 @@ function load(req, res) {
 
 ####BC API Process
 	
-	- Utilize the bc - node module on npm
-	- Add your bC client and secret variables to the config along with the auth token stored earlier
-	- Review bC api documentation to achieve application goals 
+- Utilize the bc - node module on npm
+- Add your bC client and secret variables to the config along with the auth token stored earlier
+- Review bC api documentation to achieve application goals 
 
 ####ISU Process
 
-	- Create an app with paypal 
-	- Document the clientID & client secret
-	- Whitelist the client id with PayPal
+- Create an app with paypal 
+- Document the clientID & client secret
+- Whitelist the client id with PayPal
 
 Set up request to ISU - 
 
@@ -181,11 +181,11 @@ function GetISULink(user, token, initialResponse) {
 }
 
 ```
-	- Set up second request & pass in a callback url for when the ISU Login process is finished
-	- Receive a login link from this second request
-	- Place second request in front end for the user to click on to start the sign in process
-	- User will start the process in a minibrowser/ aka new window
-	- User completes sign on and the callback url is sent - sending the merchant/payerid with it.
+- Set up second request & pass in a callback url for when the ISU Login process is finished
+- Receive a login link from this second request
+- Place second request in front end for the user to click on to start the sign in process
+- User will start the process in a minibrowser/ aka new window
+- User completes sign on and the callback url is sent - sending the merchant/payerid with it.
 
 Callback that is passed in to ISU
 
