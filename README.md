@@ -69,7 +69,7 @@ Launch the store website through the dashboard to view banners, offers, etc..
 - The Auth URL will return an OAuth token specific to the merchant - you will need to store this to use the api later
 - The load url will need to return the application view (html, react, etc…)
 
-	Auth -
+#####Auth 
 
 ```javascript
 function auth(req, res) {
@@ -85,8 +85,7 @@ function auth(req, res) {
     })
 };
 ```
-	
-	Load -
+#####Load
 
 ```javascript
 function load(req, res) {
@@ -116,7 +115,7 @@ function load(req, res) {
 - Document the clientID & client secret
 - Whitelist the client id with PayPal
 
-Set up request to ISU - 
+#####Set up request to ISU
 
 ```javascript		
 function GetISUAuth(user, initialResponse) {
@@ -144,7 +143,7 @@ function GetISUAuth(user, initialResponse) {
 }
 ```
 
-Request a user link -
+#####Request a user link 
 
 ```javascript
 function GetISULink(user, token, initialResponse) {
@@ -187,7 +186,7 @@ function GetISULink(user, token, initialResponse) {
 - User will start the process in a minibrowser/ aka new window
 - User completes sign on and the callback url is sent - sending the merchant/payerid with it.
 
-Callback that is passed in to ISU
+#####Callback that is passed in to ISU
 
 ```javascript
 function isuFinal(req, res) { 
